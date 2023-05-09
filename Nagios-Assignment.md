@@ -31,15 +31,23 @@
 ## _Complete below exercises:_
 
 ## Exercise 1: Accomplish below task to complete this exercise:
+
 a)	Create two Ubuntu 18.04 compute instances, one for Nagios master and other for target host
+
 b)	Install Nagios on master Ubuntu GCP instance
-c)	Access Nagios with http://MasterIP/nagios/ 
+
+c)	Access Nagios with _**http://\<MasterIP\>/nagios/**_
 
 ## Exercise 2: Accomplish below task to complete this exercise:
+
 a)	Add a host to Nagios master configuration for monitoring
-i.	Install apache2 on client host and make sure its running
-ii.	Add the host and service definitions in the master machine to monitor HTTP service
-iii.	Restart the Nagios service on master node
-iv.	Refresh the Nagios page and check if newly added host is available under monitoring as below
+
+ - i.	Install apache2 on client host and make sure its running
+
+ - ii.	Add the host and service definitions in the master machine to monitor HTTP service
+
+ - iii.	Restart the Nagios service on master node
+
+ - iv.	Refresh the Nagios page and check if newly added host is available under monitoring as below
  
 ![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/47d8b029-f01a-431d-ab9f-125f21c2a339)
