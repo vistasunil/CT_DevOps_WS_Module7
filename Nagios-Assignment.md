@@ -14,7 +14,7 @@
 
 <br />
 
-# $${\color{brown} &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Contact us: &emsp;&emsp;&emsp; }$$
+## $`\textcolor{red}{\text{ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Contact us: &emsp;&emsp;&emsp; }}`$
 
 <div align="right"> T O A C C E L E R A T E Y O U R C A R E E R G R O W T H </div>
 
@@ -28,10 +28,7 @@
 
 <div align="right"> <img src=https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-icon-png-image_6315990.png width="20" height="20"> +91 98712 72900 </div>
 
-$`\textcolor{green}{\text{your text}}`$ 
-
-# $`\textcolor{green}{\text{NOTE: USE UBUNTU 22.04 VIRTUAL MACHINES FOR ALL THE LABS}}`$
-
+## $`\textcolor{red}{\text{NOTE: USE UBUNTU 22.04 VIRTUAL MACHINES FOR ALL THE LABS}}`$
 
 ## _Complete below exercises:_
 
