@@ -28,12 +28,10 @@
 
 <div align="right"> <img src=https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-icon-png-image_6315990.png width="20" height="20"> +91 98712 72900 </div>
 
-````diff
+$`\textcolor{green}{\text{your text}}`$ 
+
 # NOTE: USE UBUNTU 22.04 VIRTUAL MACHINES FOR ALL THE LABS
-````
-````diff
-+ Green Text
-- Red Text
+
 
 ## _Complete below exercises:_
 
