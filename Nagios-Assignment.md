@@ -31,6 +31,9 @@
 ````diff
 # NOTE: USE UBUNTU 22.04 VIRTUAL MACHINES FOR ALL THE LABS
 ````
+````diff
++ Green Text
+- Red Text
 
 ## _Complete below exercises:_
 
