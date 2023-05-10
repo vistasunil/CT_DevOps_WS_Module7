@@ -30,6 +30,7 @@
 
 ````diff
 # NOTE: USE UBUNTU 22.04 VIRTUAL MACHINES FOR ALL THE LABS
+````
 
 ## _Complete below exercises:_
 
