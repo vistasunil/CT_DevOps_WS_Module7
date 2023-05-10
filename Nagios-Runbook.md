@@ -29,11 +29,11 @@
 
 ## Exercise 1: Accomplish below task to complete this exercise:
 
-a) Create two Ubuntu 18.04 compute instances, one for Nagios master and other for target host
+a) Create two Ubuntu 22.04 compute instances, one for Nagios master and other for target host
 
 ### _Solution:_
 
-Create two ubuntu 18.04 GCP instances following similar steps
+Create two ubuntu 22.04 GCP instances following similar steps
 
 b) Install Nagios on master Ubuntu GCP instance
 
