@@ -30,7 +30,7 @@
 
 $`\textcolor{green}{\text{your text}}`$ 
 
-# NOTE: USE UBUNTU 22.04 VIRTUAL MACHINES FOR ALL THE LABS
+# $`\textcolor{green}{\text{NOTE: USE UBUNTU 22.04 VIRTUAL MACHINES FOR ALL THE LABS}}`$
 
 
 ## _Complete below exercises:_
