@@ -143,39 +143,7 @@ xiv. Create Apache configuration by installing apache config files
 
 `sudo make install-webconf`
 
-`sudo vim /etc/apache2/conf-available/nagios.conf`
 
-Add the below given content to the configuration file.
-
-```
-ScriptAlias /nagios/cgi-bin "/usr/local/nagios/sbin"
-
-<Directory "/usr/local/nagios/sbin">
-   Options ExecCGI
-   AllowOverride None
-   Order allow,deny
-   Allow from all
-   AuthName "Restricted Area"
-   AuthType Basic
-   AuthUserFile /usr/local/nagios/etc/htpasswd.users
-   Require valid-user
-</Directory>
-
-Alias /nagios "/usr/local/nagios/share"
-
-<Directory "/usr/local/nagios/share">
-   Options None
-   AllowOverride None
-   Order allow,deny
-   Allow from all
-   AuthName "Restricted Area"
-   AuthType Basic
-   AuthUserFile /usr/local/nagios/etc/htpasswd.users
-   Require valid-user
-</Directory>
-```
-
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/24e27e04-8769-4a71-9848-1262d2537b09)
 
 xv. Add a password as shown below, to complete apache configuration
 
@@ -185,43 +153,37 @@ xv. Add a password as shown below, to complete apache configuration
 
 xvi. Enable Apache configuration
 
-`sudo a2enconf nagios`
-
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/1fbe30ee-6fad-41a1-8471-a0f01e9e2dbb)
-
-xvii. Enable Apache configuration
-
 `sudo a2enmod cgi rewrite`
 
 ![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/d5bda82d-235e-4e62-89f4-4f275463ee52)
 
-xviii. Restart apache service.
+xvii. Restart apache service.
 
 `sudo service apache2 restart`
 
 ![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/fd1e1777-e269-4373-b09d-9d283755294e)
 
-xix. Now go to the main directory.
+xviii. Now go to the main directory.
 
 `cd`
 
 ![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/a936d52e-2d6b-4ee5-9776-6abf86918b36)
 
-xx. To install the required Nagios plugin, download the plugins.
+xix. To install the required Nagios plugin, download the plugins.
 
 `wget https://nagios-plugins.org/download/nagios-plugins-2.4.4.tar.gz`
 
 ![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/24b204ff-8b5d-4424-a0af-1b34f8aa3ffc)
 
-xxi. Untar the file.
+xx. Untar the file.
 
 `tar -zxvf nagios-plugins-2.4.4.tar.gz`
 
-xxii. Go inside Nagios-2.2.1 directory.
+xxi. Go inside Nagios-2.2.1 directory.
 
 `cd nagios-plugins-2.4.4`
 
-xxiii. Compile the plugins and then complete the plugin installation process running the three commands given below:
+xxii. Compile the plugins and then complete the plugin installation process running the three commands given below:
 
 `sudo ./configure --with-nagios-user=nagios --with-nagios-group=nagios --with-openssl`
 
@@ -237,7 +199,7 @@ xxiii. Compile the plugins and then complete the plugin installation process run
 
 Before we can start using Nagios, we going to need to make a small change in the base configurations.
 
-xxiv. Edit the nagios configuration file located at /usr/local/nagios/etc/nagios.cfg
+xxiii. Edit the nagios configuration file located at /usr/local/nagios/etc/nagios.cfg
 
 `sudo vim /usr/local/nagios/etc/nagios.cfg`
 
@@ -247,11 +209,11 @@ Uncomment that line:
 
 ![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/d718cad1-6b30-4add-b19f-6fc14062b9af)
 
-xxv. Make the following directory.
+xxiv. Make the following directory.
 
 `sudo mkdir /usr/local/nagios/etc/servers`
 
-xxvi. Verify the configuration before starting Nagios.
+xxv. Verify the configuration before starting Nagios.
 
 `sudo /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg`
 
@@ -259,7 +221,7 @@ xxvi. Verify the configuration before starting Nagios.
 
 Everything looks fine!
 
-xxvii. Start Nagios using below command and enable it as service
+xxvi. Start Nagios using below command and enable it as service
 
 `sudo service nagios start`
 
