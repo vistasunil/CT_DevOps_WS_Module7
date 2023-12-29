@@ -75,15 +75,17 @@ v. Now with the given command make the required configurations.
 
 `sudo ./configure --with-command-group=nagcmd`
 
-![Screenshot 2023-12-29 at 15 15 37](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/d8ab043c-86fc-482b-94b7-fcab05f06ad5)
+![Screenshot 2023-12-29 at 15 17 54](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/9fc624a0-1d39-4d68-ab23-d76ae1c8a7f8)
 
 If the execution ends with the below given setup then we are good to go.
 
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/82b2a462-7bf0-41c3-bbcc-01d00b61e082)
+![Screenshot 2023-12-29 at 15 18 17](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/44c965f3-1c00-4672-94d9-876ac2f7a1f8)
 
 vi. Now, create required users and groups with the commands given below.
 
 `sudo make install-groups-users`
+
+![Screenshot 2023-12-29 at 15 20 38](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/354b4a5b-a41d-45f9-8281-a9f14410c8c0)
 
 vii. Run the following commands to complete the user adding process.
 
@@ -93,7 +95,7 @@ sudo usermod -a -G nagcmd nagios
 sudo usermod -a -G nagcmd www-data
 ```
 
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/7273c0f4-15d3-4450-b32d-7ccc95948435)
+![Screenshot 2023-12-29 at 15 21 28](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/52991a03-6ffe-45f6-a671-23a16a3f8a04)
 
 viii. Now we will make all the configuration work by running the below command:
 
@@ -145,7 +147,7 @@ xiv. Create Apache configuration by installing apache config files
 
 `sudo make install-webconf`
 
-
+![Screenshot 2023-12-29 at 15 22 37](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/276081bc-de1a-4ae0-823e-be358e9385d6)
 
 xv. Add a password as shown below, to complete apache configuration
 
@@ -175,11 +177,13 @@ xix. To install the required Nagios plugin, download the plugins.
 
 `wget https://nagios-plugins.org/download/nagios-plugins-2.4.4.tar.gz`
 
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/24b204ff-8b5d-4424-a0af-1b34f8aa3ffc)
+![Screenshot 2023-12-29 at 15 23 28](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/650e96d7-840d-4afb-9938-95c70427fe98)
 
 xx. Untar the file.
 
 `tar -zxvf nagios-plugins-2.4.4.tar.gz`
+
+![Screenshot 2023-12-29 at 15 24 16](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/423c1fd1-0cd4-493e-8fb1-23823170a418)
 
 xxi. Go inside Nagios-2.2.1 directory.
 
