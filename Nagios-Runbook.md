@@ -101,7 +101,7 @@ viii. Now we will make all the configuration work by running the below command:
 
 `sudo make all`
 
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/deb798c7-1600-4606-8956-72ffb67d452d)
+![Screenshot 2023-12-29 at 15 26 17](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/1e6044c7-d970-46af-8d14-f33b0bf50c6b)
 
 If everything is perfect, we should see an output as shown below.
 
