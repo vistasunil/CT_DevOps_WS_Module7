@@ -105,35 +105,35 @@ viii. Now we will make all the configuration work by running the below command:
 
 If everything is perfect, we should see an output as shown below.
 
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/45922aa0-fc4a-4043-a344-4be6c9390d9c)
+![Screenshot 2023-12-29 at 15 28 01](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/928cddaa-3646-4c96-b510-627fd70abe7b)
 
 ix. Run the following command.
 
 `sudo make install`
 
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/db5a6f0c-5b10-4017-9c71-07a1b6463895)
+![Screenshot 2023-12-29 at 15 28 53](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/803b5005-5881-4d0c-9f86-3211acc2ed31)
 
 After that you will see the output as shown below:
 
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/b1122efc-0ae4-4d35-8bc7-b3cc6220bf6a)
+![Screenshot 2023-12-29 at 15 29 33](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/d0be181d-3c02-4f57-a9c5-299b29fce6eb)
 
 x. Install init and run the following command.
 
 `sudo make install-init`
 
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/229fd0a3-7791-412a-b36c-65bb11feff67)
+![Screenshot 2023-12-29 at 15 33 56](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/f499dfd6-3d66-4546-aaea-5402e1590677)
 
 xi. Install config and run the following command.
 
 `sudo make install-config`
 
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/18779e4e-fa13-4ff9-9fa4-cc3a694b954f)
+![Screenshot 2023-12-29 at 15 34 32](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/a52d0197-2aa2-4d26-a7e0-3ee294fbc876)
 
 xii. Install commandmode as shown below:
 
 `sudo make install-commandmode`
 
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/5cbf241d-f684-491b-b6c9-22b680034567)
+![Screenshot 2023-12-29 at 15 35 12](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/084e903f-7c10-4985-a645-e5cdbc2996e3)
 
 xiii. Before moving ahead run the following commands to copy eventhandlers scripts under the libexec directory.
 
@@ -141,7 +141,7 @@ xiii. Before moving ahead run the following commands to copy eventhandlers scrip
 
 `sudo chown -R nagios:nagios /usr/local/nagios/libexec/eventhandlers`
 
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/c66036dd-c933-42f7-a7da-e86e223a0a15)
+![Screenshot 2023-12-29 at 15 36 17](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/87a02cf8-64cf-4ae7-8021-86631c33eea9)
 
 xiv. Create Apache configuration by installing apache config files
 
@@ -153,7 +153,7 @@ xv. Add a password as shown below, to complete apache configuration
 
 `sudo htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin`
 
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/edee1baf-ad75-4415-810a-c0ca27af5d69)
+![Screenshot 2023-12-29 at 15 37 09](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/2802beb5-ca0c-4bba-9808-98896cd6dce5)
 
 xvi. Enable Apache configuration
 
