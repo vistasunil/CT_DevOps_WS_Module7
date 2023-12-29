@@ -69,26 +69,7 @@ Enter the Nagios-4.4.2 directory.
 
 `cd nagios-4.5.0`
 
-v. Now, create required users and groups with the commands given below.
-
-`sudo make install-groups-users`
-
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/ba56edeb-fce4-483d-bdef-f48598563b7d)
-
-You can add passwords and Enter the user information as shown below.
-
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/c09f79af-6c60-4a91-9108-6106d3d29690)
-
-vi. Run the following commands to complete the user adding process.
-
-```
-sudo groupadd nagcmd
-sudo usermod -a -G nagcmd nagios
-sudo usermod -a -G nagcmd www-data
-```
-
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/7273c0f4-15d3-4450-b32d-7ccc95948435)
-vii. Now with the given command make the required configurations.
+v. Now with the given command make the required configurations.
 
 `sudo ./configure --with-command-group=nagcmd`
 
@@ -97,6 +78,20 @@ vii. Now with the given command make the required configurations.
 If the execution ends with the below given setup then we are good to go.
 
 ![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/82b2a462-7bf0-41c3-bbcc-01d00b61e082)
+
+vi. Now, create required users and groups with the commands given below.
+
+`sudo make install-groups-users`
+
+vii. Run the following commands to complete the user adding process.
+
+```
+sudo groupadd nagcmd
+sudo usermod -a -G nagcmd nagios
+sudo usermod -a -G nagcmd www-data
+```
+
+![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/7273c0f4-15d3-4450-b32d-7ccc95948435)
 
 viii. Now we will make all the configuration work by running the below command:
 
