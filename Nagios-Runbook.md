@@ -42,29 +42,30 @@ b) Install Nagios on master Ubuntu GCP instance
 i. Login to master node as ubuntu user and Update package index.
 
 `sudo apt-get update`
-![Screenshot 2023-12-29 at 15 01 42](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/ba5cf0c9-ca81-4faf-b500-775149fd89c1)
 
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/0231494d-ec9d-43c0-b009-40f87a8063c4)
+![Screenshot 2023-12-29 at 15 01 42](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/ba5cf0c9-ca81-4faf-b500-775149fd89c1)
 
 ii. Run the following two commands after that.
 
 `sudo apt-get install wget curl build-essential unzip openssl libssl-dev`
 
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/e877e337-1fee-47ab-8cc5-77acbabe74fa)
+![Screenshot 2023-12-29 at 15 09 34](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/1bb69c2c-0503-4398-8a07-cc0eae5023b4)
 
 `sudo apt-get install apache2 php libapache2-mod-php php-gd libgd-dev`
 
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/11561b66-b0b3-46e8-9d64-42b89ed03b0c)
+![Screenshot 2023-12-29 at 15 10 39](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/b1b17452-d3c1-42de-9d40-7140d6d54361)
 
 iii. Now that we are set with the prerequisites, install Nagios Core as shown below.
 
 `wget https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.5.0.tar.gz`
 
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/d4400c3a-d448-49be-8a6a-a14e7a5a663b)
+![Screenshot 2023-12-29 at 15 11 50](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/245083bd-fd72-4aaa-933f-eb74f589bc73)
 
 iv. Untar the file with the command shown below.
 
 `tar zxvf nagios-4.5.0.tar.gz`
+
+![Screenshot 2023-12-29 at 15 12 51](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/2859008a-89cf-4a96-932c-00d53366675d)
 
 Enter the Nagios-4.4.2 directory.
 
@@ -74,7 +75,7 @@ v. Now with the given command make the required configurations.
 
 `sudo ./configure --with-command-group=nagcmd`
 
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/86bacb0c-ac0d-42bd-bee9-7fed50038001)
+![Screenshot 2023-12-29 at 15 15 37](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/d8ab043c-86fc-482b-94b7-fcab05f06ad5)
 
 If the execution ends with the below given setup then we are good to go.
 
