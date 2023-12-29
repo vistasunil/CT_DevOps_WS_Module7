@@ -42,6 +42,7 @@ b) Install Nagios on master Ubuntu GCP instance
 i. Login to master node as ubuntu user and Update package index.
 
 `sudo apt-get update`
+![Screenshot 2023-12-29 at 15 01 42](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/ba5cf0c9-ca81-4faf-b500-775149fd89c1)
 
 ![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/0231494d-ec9d-43c0-b009-40f87a8063c4)
 
