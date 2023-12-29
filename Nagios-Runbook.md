@@ -47,7 +47,7 @@ i. Login to master node as ubuntu user and Update package index.
 
 ii. Run the following two commands after that.
 
-`sudo apt-get install wget build-essential unzip openssl libssl-dev`
+`sudo apt-get install wget curl build-essential unzip openssl libssl-dev`
 
 ![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/e877e337-1fee-47ab-8cc5-77acbabe74fa)
 
@@ -55,9 +55,23 @@ ii. Run the following two commands after that.
 
 ![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/11561b66-b0b3-46e8-9d64-42b89ed03b0c)
 
-iii. Now, add user with the commands given below.
+iii. Now that we are set with the prerequisites, install Nagios Core as shown below.
 
-`sudo adduser nagios`
+`wget https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.5.0.tar.gz`
+
+![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/d4400c3a-d448-49be-8a6a-a14e7a5a663b)
+
+iv. Untar the file with the command shown below.
+
+`tar zxvf nagios-4.5.0.tar.gz`
+
+Enter the Nagios-4.4.2 directory.
+
+`cd nagios-4.5.0`
+
+v. Now, create required users and groups with the commands given below.
+
+`sudo make install-groups-users`
 
 ![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/ba56edeb-fce4-483d-bdef-f48598563b7d)
 
@@ -65,7 +79,7 @@ You can add passwords and Enter the user information as shown below.
 
 ![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/c09f79af-6c60-4a91-9108-6106d3d29690)
 
-iv. Run the following commands to complete the user adding process.
+vi. Run the following commands to complete the user adding process.
 
 ```
 sudo groupadd nagcmd
@@ -74,21 +88,6 @@ sudo usermod -a -G nagcmd www-data
 ```
 
 ![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/7273c0f4-15d3-4450-b32d-7ccc95948435)
-
-v. Now that we are set with the prerequisites, install Nagios Core as shown below.
-
-`wget https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.4.2.tar.gz`
-
-![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/d4400c3a-d448-49be-8a6a-a14e7a5a663b)
-
-vi. Untar the file with the command shown below.
-
-`tar xzf nagios-4.4.2.tar.gz`
-
-Enter the Nagios-4.4.2 directory.
-
-`cd nagios-4.4.2`
-
 vii. Now with the given command make the required configurations.
 
 `sudo ./configure --with-command-group=nagcmd`
@@ -145,7 +144,9 @@ xiii. Before moving ahead run the following commands to copy eventhandlers scrip
 
 ![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/c66036dd-c933-42f7-a7da-e86e223a0a15)
 
-xiv. Create Apache configuration
+xiv. Create Apache configuration by installing apache config files
+
+`sudo make install-webconf`
 
 `sudo vim /etc/apache2/conf-available/nagios.conf`
 
@@ -213,17 +214,17 @@ xix. Now go to the main directory.
 
 xx. To install the required Nagios plugin, download the plugins.
 
-`wget http://www.nagios-plugins.org/download/nagios-plugins-2.2.1.tar.gz`
+`wget https://nagios-plugins.org/download/nagios-plugins-2.4.4.tar.gz`
 
 ![image](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/24b204ff-8b5d-4424-a0af-1b34f8aa3ffc)
 
 xxi. Untar the file.
 
-`tar xzf nagios-plugins-2.2.1.tar.gz`
+`tar -zxvf nagios-plugins-2.4.4.tar.gz`
 
 xxii. Go inside Nagios-2.2.1 directory.
 
-`cd nagios-plugins-2.2.1`
+`cd nagios-plugins-2.4.4`
 
 xxiii. Compile the plugins and then complete the plugin installation process running the three commands given below:
 
