@@ -67,7 +67,7 @@ iv. Untar the file with the command shown below.
 
 ![Screenshot 2023-12-29 at 15 12 51](https://github.com/vistasunil/CT_DevOps_WS_Module7/assets/37858762/2859008a-89cf-4a96-932c-00d53366675d)
 
-Enter the Nagios-4.4.2 directory.
+Enter the Nagios-4.5.0 directory.
 
 `cd nagios-4.5.0`
 
